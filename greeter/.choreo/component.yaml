@@ -1,0 +1,14 @@
+apiVersion: core.choreo.dev/v1alpha1
+kind: ComponentConfig
+metadata:
+    name: greeter1
+    projectName: Default Project
+spec:
+    build:
+        branch: main
+    inbound:
+        - name: greeter1
+          port: 9090
+          type: REST
+          visibility: Public
+          context: .
