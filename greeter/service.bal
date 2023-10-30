@@ -16,6 +16,7 @@
 //
 
 import ballerina/http;
+import ballerina/log;
 
 # A service representing a network-accessible API
 # bound to port `9090`.
@@ -29,6 +30,8 @@ service / on new http:Listener(9090) {
         if name is "" {
             return error("name should not be empty!");
         }
+        log:printInfo("info log123 name:"+name);
+
         return "Hello, " + name;
     }
 }
