@@ -1,0 +1,8 @@
+apiVersion: core.choreo.dev/v1alpha1
+kind: ComponentConfig
+metadata:
+  name: testTrigger
+  projectName: choreo-mono-repo-for-logs-test-3
+  annotations:
+    componentType: webhook
+spec: {}

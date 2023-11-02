@@ -1,12 +1,8 @@
 apiVersion: core.choreo.dev/v1alpha1
 kind: ComponentConfig
 metadata:
-  name: testno
+  name: reactSpaa
   projectName: choreo-mono-repo-for-logs-test-3
   annotations:
-    componentType: buildpackService
-spec:
-  inbound:
-    - name: testno
-      port: 30022
-      type: GRPC
+    componentType: byocWebAppsDockerfileLess
+spec: {}
