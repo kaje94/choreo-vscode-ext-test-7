@@ -1,7 +1,7 @@
 apiVersion: core.choreo.dev/v1alpha1
 kind: ComponentConfig
 metadata:
-  name: terr
+  name: testers
   projectName: choreo-mono-repo-for-logs-test-3
   annotations:
     componentType: buildpackCronJob
