@@ -1,8 +1,15 @@
 apiVersion: core.choreo.dev/v1alpha1
 kind: ComponentConfig
 metadata:
-  name: testedd
+  name: testnodes
   projectName: choreo-mono-repo-for-logs-test-3
   annotations:
-    componentType: buildpackCronJob
-spec: {}
+    componentType: service
+spec:
+  inbound:
+    - name: testnodes
+      port: 3000
+      type: REST
+      visibility: Organization
+      context: .
+      schemaFilePath: openapi.yaml
